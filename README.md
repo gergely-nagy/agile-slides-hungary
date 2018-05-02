@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-    The talk hosted by <a href="https://www.linkedin.com/in/gergely-nagy-9a8198117/">Me</a> . [2018.01.22]
+    The talk hosted by <a href="https://www.linkedin.com/in/gergely-nagy-9a8198117/">Me</a> . [2018.05.07]
 </div>
 <br />
 
