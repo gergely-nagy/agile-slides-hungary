@@ -1,0 +1,697 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Agilis szoftverfejlesztés</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Agilis szoftverfejlesztés</h1>
+					<!-- <h3>Bevezetés</h3> -->
+					<p>
+						<small>Készítette <a href="https://www.linkedin.com/in/gergely-nagy-9a8198117/">@gergely-nagy</a></small>
+					</p>
+					<aside class="notes">
+						Szeretném elkezdeni az előadást.<br />
+						Magamról pár szó, hogy miért is szeretném megtartani ezt az előadást nektek...<br />
+						<ul>
+							<li><b>kicsit több mint 1 éve vagyok a cégnél</b> 1. projektem -> organW (elfogultság)</li>
+						  <li><b>organW</b>: kezdeti cél -> 1. agilis projekt cégnél</li>
+						  <li><b>Személyes érdeklődés</b>: állásinterjúk, cikkek interneten, magaménak éreztem</li>
+						</ul>
+						Hogy miről is fogok beszélni? (röviden összefoglalom)<br />
+						<b>Agilis kiáltvány</b>
+							- Kialakulás okai
+							- 4 érték
+							- 12 alapelv
+
+					</aside>
+				</section>
+				<section>
+					<h2>
+						Mit hívunk agilis szoftverfejlesztésnek?
+					</h2>
+					<aside class="notes">
+						Ez a kérdés hozzátok szól.
+						<br />
+						<br />
+						Mindenkinek különböző dolgok jutnak eszébe az agilis kifejezésről? De szeretném ha valaki megpróbálná megfoglamazni
+						1 vagy 2 mondatba hogy mit is jelent ez a kifejezés.
+						<br />
+						<br />
+						Most még nem mondok pontos definiciót, szeretném ha az előadás végére kitisztulna ez a fogalom.
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>
+							Manifesto for Agile Software Development
+						</h2>
+						<h3>
+							(2001)
+						</h3>
+						<div class="container">
+							<div class="col">
+								<ul>
+									<li>Kent Beck</li>
+									<li>Mike Beedle</li>
+									<li>Arie van</li>
+									<li>Bennekum</li>
+									<li>Ward Cunningham</li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul>
+									<li>Martin Fowler</li>
+									<li>Jim Highsmith</li>
+									<li>Andrew Hunt</li>
+									<li>Ron Jeffries</li>
+									<li>Jon Kern</li>
+									<li>Brian Marick</li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul>
+									<li>Steve Mellor</li>
+									<li>Ken Schwaber</li>
+									<li>Jeff Sutherland</li>
+									<li>Dave Thomas</li>
+									<li>Grenning</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>
+							Célok
+						</h2>
+						<div class="col">
+							<ul>
+								<li>Minnél hamarabb üzleti eredmények</li>
+								<li>Kicsi jól definiálható feladatok</li>
+								<li>Végfelhasználó számára is értékes termék</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>
+							4 érték
+						</h2>
+						<div class="col">
+							<ul>
+								<li>Az <b>egyének</b> és <b>együttműködés</b> fontosabb a <i>folyamatoknál</i> és az <i>eszközöknél</i></li>
+								<li>A <b>működő szoftver</b> fontosabb az <i>átfogó dokumentációnál</i></li>
+								<li>Az <b>ügyféllel való együttműködés</b> fontosabb a <i>megkötött szerződésnél</i></li>
+								<li><b>Változásokra</b> megfelelően <b>reagálni</b> fontosabb egy <i>rögzített terv</i> követésénél.</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>
+							12 alapelv
+						</h2>
+						<div class="col">
+							<ol>
+								<li>Ügyfél elégedettség​ elérése az értékes szoftver korai ​és folyamatos szállításával</li>
+								<li>Elfogadjuk a igénybeli változtatásokat,​ még a fejlesztés késői fázisában is</li>
+								<li>A működő szoftvert gyakran átadjuk ​(inkább hetente mint havonta)</li>
+							</ol>
+						</div>
+					</section>
+					<section>
+						<h2>
+							12 alapelv
+						</h2>
+						<div class="col">
+							<ol start="4">
+								<li>Szoros, napi együttműködés​ az üzleti emberek és a fejlesztők között</li>
+								<li>A projektek motivált egyének kö​ ré épülnek, akikben meg kell bíznunk</li>
+								<li>A kommunikáció legjobb formája a személyes párbeszéd</li>
+							</ol>
+						</div>
+					</section>
+					<section>
+						<h2>
+							12 alapelv
+						</h2>
+						<div class="col">
+							<ol start="7">
+								<li>A működő szoftver​ a haladás legnagyobb mértéke</li>
+								<li>Fenntartható fejlődés,​ mely képes egy állandó tempót fenntartani</li>
+								<li>A figyelem a technikai kiválóság és jó tervezés​ felé elősegít az agilitást</li>
+							</ol>
+						</div>
+					</section>
+					<section>
+						<h2>
+							12 alapelv
+						</h2>
+						<div class="col">
+							<ol start="10">
+								<li>Az egyszerűség ​- az el nem végzett munka maximalizálása - alapvető</li>
+								<li>A legjobb architektúrák, tervek, modellek önszerveződő csapatoktól​ száramznak.</li>
+								<li>A csapat rendszeresen visszatekint a munkájára a hatékonyság növelése és a
+	változó körülmények kezelése érdekében</li>
+							</ol>
+						</div>
+					</section>
+					<section>
+						<h2>
+							Az agilis kiáltvány...
+						</h2>
+						<div class="col">
+							<ul>
+								<li>NEM keretrendszer, NEM egy munkamódszert ad</li>
+								<li>NEM eszközrendszer, NEM mondja el hogyan érjük el a célokat</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>
+							Az agilis kiáltvány...
+						</h2>
+						<div class="col">
+							az iteratív fejlesztésen alapuló szoftverfejlesztési módszerek csoportjára utal, ahol a követelmények és megoldások az önszerveződő többfunkciós csoportok közötti együttműködésen keresztül fejlődnek.
+						</div>
+						<aside class="notes">
+							4 fontos szó kiemelés: iterativ, egyuttmokes, fejlodes (nem hiba hibázni)
+						</aside>
+					</section>
+					<section>
+						<img
+							height="600px"
+							width="1300px"
+							data-src="assets/agileandwaterfall.png"
+						>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>
+							Agilis keretrendszerek
+						</h2>
+					</section>
+					<section>
+						<div class="container">
+							<div class="col">
+								<h4>Könnyűsúlyú</h4>
+								<ul>
+									<li><b>Scrum</b></li>
+									<li>Lean</li>
+									<li><b>Kanban</b></li>
+									<li>Crystal</li>
+									<li><b>Extreme programming (XP)</b></li>
+									<li>Test driven development (TDD) </li>
+								</ul>
+							</div>
+							<div class="col">
+								<h4>Teljesebb</h4>
+								<ul>
+									<li>Dynamic systems development method (DSDM)</li>
+									<li>Agile Unified Process (AUP)</li>
+									<li>Large-scale Scrum (LeSS)</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<img
+							height="500"
+							width="1800"
+							data-src="assets/agileused.png"
+						>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>
+							Scrum
+						</h2>
+						<ul>
+							<li>Szoftver fejlesztésre való agilis keretrendszer</li>
+							<li>Legelterjedtebb</li>
+							<li>Viszonylag könnyen megvalósítható</li>
+							<li>Gyors és gyakori szállításokra összpontosít</li>
+							<li>Ügyféllel való kapcsolat</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Szerepek
+						</h2>
+						<ul>
+							<li>Terméktulajdonos (PO)</li>
+							<li>Fejlesztő csapat</li>
+							<li>Scrum Master</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Product Owner
+						</h2>
+						<ul>
+							<li>Az érdekeltek bevonásával elkészíti a termék víziót.</li>
+							<li>A termék rövid és hosszútávú célját tervezi és megosztja.</li>
+							<li>
+								Visszajelzéseket gyűjt az ügyfelektől, érdekeltektől. ("ügyfél hangja")
+							</li>
+							<li>
+								Karbantartja és sorbarendezi a fejlesztési feladatok listáját. (product backlog)
+							</li>
+							<li>
+								Funckionális döntések meghozatala
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Product Owner
+						</h2>
+						<ul>
+							<li>NEM hoz technikai döntéseket.</li>
+							<li>NEM kérdőjelezi meg a becsléseket.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Fejlesztő csapat
+						</h2>
+						<ul>
+							<li>3-9 fő.</li>
+							<li>Kereszt-funkcionalítás (T-alakú szakértelem)</li>
+							<li>
+								Maga választja ki a feladatot amin dolgozik. (Pull system)
+							</li>
+							<li>
+								A fejlesztői környezeteket karbantartja és biztosítja működésüket
+							</li>
+							<li>
+								Tisztában van a Scrum szabályaival és annak megfelelően működik.
+							</li>
+							<li>
+								A csapattagok egymást vezetik, moderálják, önszerveződően működnek.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Fejlesztő csapat
+						</h2>
+						<ul>
+							<li>A Product Owner-rel összedolgozva leszállítja az egy-egy feladat által képviselt
+funkcionalitást, a lehető legkevesebb befektetett idővel.</li>
+							<li>Az általa dolgozott feladatokról tájékoztatást ad a többi csapattagnak.</li>
+							<li>Minden sprintben levő feladatért egységként, csapatként felelősek.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Scrum Master
+						</h2>
+						<ul>
+							<li>
+								Betartattja a Scrum szabályait
+							</li>
+							<li>
+								Feladata hogy a Scrum csapat és a velük dolgozó többi ember számára világosak
+legyenek az agilis értéketek, a Scrum működése
+							</li>
+							<li>
+								Pártatlan vélemény a fejlesztőcsapat és a PO között
+							</li>
+							<li>
+								Pártatlan vélemény a fejlesztőcsapaton belül
+							</li>
+							<li>
+								Segíti a PO-t a backlog karbantartásában
+							</li>
+							<li>
+								Feloldja a fejlesztés közben felmerülő, csapatot gátló akadályokat.
+							</li>
+							<li>
+								Segít a folyamatok vizualizációjában.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Scrum Master
+						</h2>
+						<ul>
+							<li>
+								NEM ad ki feladatok a csapattagoknak.
+							</li>
+							<li>
+								NEM hoz technológia és implementációs döntéseket (ez a fejlesztők feladata)
+							</li>
+							<li>
+								NEM hoz funkcionális döntéseket (ez a PO feladata)
+							</li>
+							<li>
+								NEM szolgál kizárólagos kommunikációs pontként a csapat és külső felek között
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Megbeszélések
+						</h2>
+						<ul>
+							<li>
+								Daily scrum
+							</li>
+							<li>
+								Sprint planning
+							</li>
+							<li>
+								Sprint retrospective
+							</li>
+							<li>
+								Sprint review
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Daily scrum meeting
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Daily scrum meeting
+						</h2>
+						<img
+							height="500"
+							width="1800"
+							data-src="assets/dsm.jpg_large"
+						>
+					</section>
+					<section>
+						<h2>
+							Sprint planning
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Sprint retrospective
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Sprint review
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Scrum eszközök
+						</h2>
+						<ul>
+							<li>
+								Product Backlog
+							</li>
+							<li>
+								Sprint Backlog
+							</li>
+							<li>
+								Burn-Down Chart
+							</li>
+							<li>
+								Velocity
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Product Backlog
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Sprint Backlog
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Burn-Down Chart
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>
+							Velocity
+						</h2>
+						<ul>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>
+							Extrém programozás (XP)
+						</h2>
+						Az extrém programozás egyik legfontosabb elgondolása, hogy a program megváltoztatásának költségei többnyire állandóak az idõ múlásával.
+					</section>
+					<section>
+						<h2>
+							Következőkkel érhető el
+						</h2>
+						<ul>
+							<li>
+								Emphasis on continuous feedback from the customer
+							</li>
+							<li>
+								Rövid iterációk
+							</li>
+							<li>
+								Tervezés és újratervezés
+							</li>
+							<li>
+								Kódolás és tesztelés gyakran
+							</li>
+							<li>
+								Korai hibák megszüntetése, így a költségek csökkentése
+							</li>
+							<li>
+								Keeping the customer involved throughout the development
+							</li>
+							<li>
+								Mûködõ termék szállítása az ügyfélnek
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Miért pont "Extrém" ?</h2>
+						<section>
+							<div class="container">
+								<div class="col">
+									<h4>Hatékony folyamat</h4>
+									<ul>
+										<li>Code reviews</li>
+										<li>Testing</li>
+										<li>Design</li>
+										<li>Simplicity</li>
+										<li>Short iterations</li>
+									</ul>
+								</div>
+								<div class="col">
+									<h4>Extrém hatékony folyamat</h4>
+									<ul>
+										<li>Páros programozás</li>
+										<li>Teszt vezérelt</li>
+										<li>Persistent refactoring</li>
+										<li>Simple design, simple code & code only that is required</li>
+										<li>
+											The planning game
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<h2>
+								XP
+							</h2>
+							<ul>
+								<li>
+									5 érték
+								</li>
+								<li>
+									12 alapelv
+								</li>
+								<li>
+									Szerepek
+								</li>
+							</ul>
+						</section>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>
+							Kanban
+						</h2>
+						<ul>
+							<li>
+								Nincs iteráció (folytonos munka)
+							</li>
+							<li>
+								Vizulizáció: Kanban tábla
+							</li>
+							<li>
+								Prioritás: minnél jobbra
+							</li>
+							<li>
+								Megakadályozza a többfeladatos munkavégzést
+							</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
