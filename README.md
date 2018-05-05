@@ -1,4 +1,4 @@
-<h1 align="center">Agile [HUN]</h1>
+<h1 align="center">Agile software development [HUN]</h1>
 
 <div align="center">
   <strong>🎤  A hungarian overview of Agile software development.</strong>
@@ -14,6 +14,11 @@
 
 ## Topics
 
+- Agile software development overview
+- Manifesto for Agile Software Development
+- Scrum
+- Extreme programing (XP)
+- Kanban
 
 ## License
 
